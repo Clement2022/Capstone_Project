@@ -2,15 +2,11 @@
 
 ## Project Overview
 
----
-
 I will be building an app that will help both teacher and students all together. It is all about how much an app understands the users who are looking out for different products or services. This is the advanced feature that an app offers the user to work anywhere an Internet connection is available. It will also track their due dates and completed project/homework. The app will help organize and manage their resources during research. With the help of this feature, teachers can share different types of multimedia content such as images, videos, pdf, etc. It ultimately helps students to get the maximum benefit from the session.
 
 ---
 
 ## Functionality
-
----
 
 ### User Stories
 
@@ -40,46 +36,35 @@ I will be building an app that will help both teacher and students all together.
 
 ## Data Models
 
----
-
 <table><tr><td width="400px" valign="top">
+
 ```ts
-     Resources Model
-     name = (CharField)
-     author = (Char Field)
-     date_published = (DateField)
-     url = (Char Field)
-     price = (Decimal Field)
-     projects = (ManyToManyField)
+Resources Model
+    name = (CharField)
+    author = (Char Field)
+    date_published = (DateField)
+    url = (Char Field)
+    price = (Decimal Field)
+    projects = (ManyToManyField)
 ```
-</td><td width="600px"><br>
+
+</td><td width="400px" valign="top">
 
 ```ts
 Project Model
-     name = (CharField)
-     user = (ForeignKey)
-     due_date = (DateField)
+    user = (ForeignKey)
+    name = (CharField)
+    due_date = (DateField)
+
+
+
 ```
 
 </td></tr></table>
-- Project Model
-    - name = (CharField)
-    - user = (ForeignKey)
-    - due_date = (DateField)
-
-- Resources Model
-  - name = (CharField)
-  - author = (Char Field)
-  - date_published = (DateField)
-  - url = (Char Field)
-  - price = (Decimal Field)
-  - projects = (ManyToManyField)
 
 ---
 
 ## Schedule
-
----
 
 ### First Week:
 
