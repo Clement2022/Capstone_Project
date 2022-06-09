@@ -42,11 +42,30 @@ I will be building an app that will help both teacher and students all together.
 
 ---
 
-- Project Model
+<table><tr><td width="400px" valign="top">
+```ts
+     Resources Model
+     name = (CharField)
+     author = (Char Field)
+     date_published = (DateField)
+     url = (Char Field)
+     price = (Decimal Field)
+     projects = (ManyToManyField)
+```
+</td><td width="600px"><br>
 
-  - name = (CharField)
-  - user = (ForeignKey)
-  - due_date = (DateField)
+```ts
+Project Model
+     name = (CharField)
+     user = (ForeignKey)
+     due_date = (DateField)
+```
+
+</td></tr></table>
+- Project Model
+    - name = (CharField)
+    - user = (ForeignKey)
+    - due_date = (DateField)
 
 - Resources Model
   - name = (CharField)
@@ -84,10 +103,10 @@ I will be building an app that will help both teacher and students all together.
 
 ### Final Week:
 
-    [ ] Developing Frontend Operations.
-    [ ] Connecting Frontend to the Backend.
-    [ ] Botstrap, CSS Stylings & Adjustments.
-    [ ] Presentation
+- [ ] Developing Frontend Operations.
+- [ ] Connecting Frontend to the Backend.
+- [ ] Botstrap, CSS Stylings & Adjustments.
+- [ ] Presentation
 
 ---
 
