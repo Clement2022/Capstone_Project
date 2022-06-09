@@ -18,15 +18,15 @@ I will be building an app that will help both teacher and students all together.
 
 - "As a user l want to be able to **manage and organize** resources for research projects."
 
-- "As a user l want to be able to perform all the above Infor and able search dictionary, books, media all in a single dashboard by making a simple **API Calls**."
+- "As a user l want to be able to perform all the above Info and able search dictionary, books, media all in a single dashboard by making a simple **API Calls**."
 
 ### Backend Functionality
 
 1. Implementing login authentication to protect user profile & create by redirecting to login and registered page.
 
-2. Use the form to create register, login/out page that will allow the user to create and add projets.
+2. Use the form to create register, login/out page that will allow the user to create and add projects.
 
-3. Create a view that receives the user submissions from the form and show it on frontend.
+3. User the form to create a view function that will receive the user submissions and organize the resources, whether it is a book, video or an article.
 
 ### Additional Features:
 
@@ -41,10 +41,11 @@ I will be building an app that will help both teacher and students all together.
 ```ts
 Resources Model
     name = (CharField)
-    author = (Char Field)
+    author = (CharField)
     date_published = (DateField)
-    url = (Char Field)
-    price = (Decimal Field)
+    choice_resources = (CharField)
+    url = (CharField)
+    price = (DecimalField)
     projects = (ManyToManyField)
 ```
 
@@ -55,6 +56,7 @@ Project Model
     user = (ForeignKey)
     name = (CharField)
     due_date = (DateField)
+
 
 
 
@@ -74,15 +76,15 @@ Project Model
 - [ ] Create my env (Visual Environment)
 - [ ] Start building Capstone Project
 - [ ] Creating My models
-- [ ] Botstrap, CSS Stylings & Adjustments.
+- [ ] Bootstrap, CSS Stylings & Adjustments.
 
 ---
 
 ### Second Week:
 
-- [ ] Developing Backend Reations.
+- [ ] Developing Backend Reactions.
 - [ ] Work on Setting up Functions.
-- [ ] Botstrap, CSS Stylings & Adjustments.
+- [ ] Bootstrap, CSS Stylings & Adjustments.
 
 ---
 
@@ -90,7 +92,7 @@ Project Model
 
 - [ ] Developing Frontend Operations.
 - [ ] Connecting Frontend to the Backend.
-- [ ] Botstrap, CSS Stylings & Adjustments.
+- [ ] Bootstrap, CSS Stylings & Adjustments.
 - [ ] Presentation
 
 ---
@@ -108,11 +110,8 @@ Project Model
 ## Extra Feature:
 
 - "As a user l want to be able to **create a study** card for the course."
-  <br/>
-  <br/>
+
 - "As a user l want to be able to **click on task button** when the task is complete. E.g., To-Do List, Projects, & Homework’s. All completed tasks will not show on to-do list"
-  <br/>
-  <br/>
 
 ## Problems Encounter:
 
