@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-I will be building an app that will help both teacher and students all together. It is all about how much an app understands the users who are looking out for different products or services. This is the advanced feature that an app offers the user to work anywhere an Internet connection is available. It will also track their due dates and completed project/homework. The app will help organize and manage their resources during research. With the help of this feature, teachers can share different types of multimedia content such as images, videos, pdf, etc. It ultimately helps students to get the maximum benefit from the session.
+I will be building a study app that will help both the teachers and students. It's projected to be a minimum available product. It is all about how the app understands the user's interest in different products or services. It is an advanced feature that an app offers the user to work anywhere an internet connection is available. It will also track their due dates and completed projects/homework. The app will help organize and manage their resources during research. With the help of this feature, teachers can share different types of resources such as images, videos, pdf, books, articles, etc. It ultimately helps students to get the maximum benefit from this app.
 
 ---
 
