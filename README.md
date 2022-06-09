@@ -18,7 +18,7 @@ I will be building an app that will help both teacher and students all together.
 
 - "As a user l want to be able to **manage and organize** resources for research projects."
 
-- "As a user l want to be able to perform all the above Info and able search dictionary, books, media all in a single dashboard by making a simple **API Calls**."
+- "As a user l want to be able to perform all the above Info and able to search dictionary, books, media all in a single dashboard by making a simple **API Calls**."
 
 ### Backend Functionality
 
