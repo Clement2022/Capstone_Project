@@ -43,7 +43,7 @@ Resources Model
     name = (CharField)
     author = (CharField)
     date_published = (DateField)
-    choice_resources = (CharField)
+    resources_type = (CharField)
     url = (CharField)
     price = (DecimalField)
     projects = (ManyToManyField)
@@ -71,29 +71,36 @@ Project Model
 ### First Week:
 
 - [x] Create Repository, Setup and Clone.
-- [x] Readme.md
-- [x] Planning on Database Structure
-- [ ] Create my env (Visual Environment)
-- [ ] Start building Capstone Project
-- [ ] Creating My models
+- [x] Readme.md.
+- [x] Planning on Database Structure.
+- [ ] Set up User model.
+- [ ] Create register and login urls and views.
+- [ ] Create/style forms to register/login users.
+- [ ] Set up Project and Resource models.
+- [ ] Create a Project and a Resource in the admin panel and associate the Resource with the Project.
 - [ ] Bootstrap, CSS Stylings & Adjustments.
 
 ---
 
 ### Second Week:
 
+- [ ] Create a url and a view for listing all of a user's.
+- [ ] Create a url, view and form to create new Projects.
 - [ ] Developing Backend Reactions.
-- [ ] Work on Setting up Functions.
-- [ ] Bootstrap, CSS Stylings & Adjustments.
+- [ ] Projects, style the projects on the template.
+- [ ] Create a url, view and template for viewing the details of a Project.
+- [ ] The Project's resources will also be listed on this page.
+- [ ] Style Project detail page and resources list.
+- [ ] Create a form on the Project detail page for adding additional resources to the project
 
 ---
 
 ### Final Week:
 
-- [ ] Developing Frontend Operations.
-- [ ] Connecting Frontend to the Backend.
 - [ ] Bootstrap, CSS Stylings & Adjustments.
 - [ ] Presentation
+- [ ]
+- [ ]
 
 ---
 
@@ -116,3 +123,4 @@ Project Model
 ## Problems Encounter:
 
 - Naming my models and the fields that the model will inherit.
+- Finding what to JS in the project.
