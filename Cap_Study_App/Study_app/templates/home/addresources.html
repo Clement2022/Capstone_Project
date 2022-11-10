@@ -1,0 +1,17 @@
+{% extends 'layout/base.html' %}
+
+{% load static %}
+
+{% block content %}
+<div class="resources">
+    <h2 class="text-center mt-5">ADD RESOURCES</h2>
+
+    <form action="{% url 'Study_app:addresources' project.id %}" method="POST">
+        <label for="addresource">Resources</label>
+       {{form}}
+
+        {% csrf_token %}
+        <input class="btn btn-danger mt-4" type="submit">
+    </form>
+</div>
+{% endblock content %}
