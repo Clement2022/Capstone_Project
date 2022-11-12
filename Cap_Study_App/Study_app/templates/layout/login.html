@@ -4,7 +4,7 @@
 
 
 <h1 class="h1 text-center m-5">LOG IN</h1>
-<form action="{% url 'Study_app:login' %}" method="POST" class="row g-3 offset-4 d-flex flex-column align-item-center">
+<form action="{% url 'study_app:login' %}" method="POST" class="row g-3 offset-4 d-flex flex-column align-item-center">
 
     <div class="col-md-6">
         <label for="username" class="form-label"><h2>Username</h2></label>
@@ -24,7 +24,7 @@
 
 <!-- link to register route -->
 <div class="col-4 offset-4 align-item-center mt-3">
-    <h5>New Student Register here? <a href="{% url 'Study_app:register' %}"
+    <h5>New Student Register here? <a href="{% url 'study_app:register' %}"
             class="text-decoration-none link-danger">Create Account</a></h5>
 </div>
 

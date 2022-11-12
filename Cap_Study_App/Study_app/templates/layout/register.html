@@ -4,7 +4,7 @@
 
 
 <h1 class="text-center">REGISTER</h1>
-<form action="{% url 'Study_app:register' %}" method="POST" class="col-4 offset-4 d-flex flex-column align-item-center">
+<form action="{% url 'study_app:register' %}" method="POST" class="col-4 offset-4 d-flex flex-column align-item-center">
     {{form}}
    
     {% csrf_token %}
@@ -13,7 +13,7 @@
 
 <!-- Link to Sign In Route -->
 <div class="col-4 offset-4 align-item-center mt-3">
-    <h5>Have an account? <a href="{% url 'Study_app:login' %}" class="text-decoration-none link-danger">Sign In</a>
+    <h5>Have an account? <a href="{% url 'study_app:login' %}" class="text-decoration-none link-danger">Sign In</a>
     </h5>
 </div>
 

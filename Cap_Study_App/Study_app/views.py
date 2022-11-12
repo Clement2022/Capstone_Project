@@ -6,7 +6,8 @@ from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect, get_object_or_404
 from . form import Project, Resource, ProjectForm, ResourceForm,RegisterForm,DictionaryForm
 
-#=================================================#
+
+# =============================================================================================
 # Create your views here.
 def register(request):
     if request.method== "POST":
@@ -15,7 +16,7 @@ def register(request):
             form.save()
             username = form.cleaned_data.get('username')
             messages.success(request, f"{username} account is successfully created...")
-            return redirect('Study_app:login')
+            return redirect('study_app:login')
 
     else:
         form = RegisterForm()
@@ -54,7 +55,7 @@ def login(request):
 
         django_login(request, user)
 
-        return redirect('Study_app:homepage')
+        return redirect('study_app:homepage')
 
 
     elif request.method == "GET":
@@ -81,7 +82,7 @@ def projects(request):
             project.save()
 
         messages.success(request, f"The project created by {request.user.username} is successfully added....")
-        return redirect('Study_app:projects')
+        return redirect('study_app:projects')
 
     elif request.method== "GET":
         form = ProjectForm()
@@ -137,7 +138,7 @@ def resource(request):
             resource.save()
 
         messages.success(request, f"The resource added by {request.user.username} is successful....")
-        return redirect('Study_app:resource')
+        return redirect('study_app:resource')
 
     elif request.method== "GET":
         form = ResourceForm()
@@ -167,17 +168,17 @@ def resourcedetail(request, resource_id):
 def delete_proj(request, project_id):
     projects=get_object_or_404(Project, id=project_id)
     projects.delete()
-    return redirect('Study_app:projects')
+    return redirect('study_app:projects')
 
 @login_required
 def deleteresource(request, resource_id):
     resources=Resource.objects.get(Resource, id=resource_id)
     resources.delete()
-    return redirect('Study_app:resource')
+    return redirect('study_app:resource')
 
 def logout(request):
     django_logout(request)
-    return redirect( 'Study_app:login')
+    return redirect( 'study_app:login')
 # ==========================================================================================
 
 def addresources(request, project_id):
@@ -191,7 +192,7 @@ def addresources(request, project_id):
            
             messages.success(request, "The resource is added successfully.....")
 
-        return redirect('Study_app:projdetail', project_id)
+        return redirect('study_app:projdetail', project_id)
 
     else:
         project =Project.objects.get(id=project_id)

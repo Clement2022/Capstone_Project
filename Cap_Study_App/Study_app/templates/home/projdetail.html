@@ -17,7 +17,7 @@
             </div>
         </div>
     </div>
-    <a href="{% url 'Study_app:addresources' project.id %}" class="btn btn-success mt-5">Add Resources</a>
+    <a href="{% url 'study_app:addresources' project.id %}" class="btn btn-success mt-5">Add Resources</a>
       <h3 class="m-4">RESOURCES</h3>
         <div class="d-flex flex-wrap gap-3 justify-content-center mb-4">
           {% for resource in project.resources.all %}

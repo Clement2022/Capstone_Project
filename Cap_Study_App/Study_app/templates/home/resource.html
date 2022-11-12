@@ -8,7 +8,7 @@
 
     <div class="col-md-3 pt-5">
       <a class="text-decoration-none"
-        href="{% url 'Study_app:resourcedetail' project.id %}">
+        href="{% url 'study_app:resourcedetail' project.id %}">
         <div class="card">
           <div class="card-header bg-primary text-dark">{{resource.name}}</div>
           <div class="card-body bg-primary text-dark">{{resource.author}} {{resource.price}} {{resource.resources_type}} {{resource.url}} {{resource.date_published}}
@@ -16,7 +16,7 @@
           </div>
           
           <div class="card-footer mt-auto">
-            <a href="{% url 'Study_app:deleteresource' resource.id %}">
+            <a href="{% url 'study_app:deleteresource' resource.id %}">
               <i class="bi bi-trash"></i>
             </a>
           </div>
@@ -34,7 +34,7 @@
       <form
         method="POST"
         class="d-flex flex-column"
-        action="{% url 'Study_app:resource' %}"
+        action="{% url 'study_app:resource' %}"
       >
         {% csrf_token %}
 

@@ -41,7 +41,7 @@
                             </div>
                         </a>
                     </td>
-                    <td><a href="{% url 'Study_app:delete_proj' project.id %}">
+                    <td><a href="{% url 'study_app:delete_proj' project.id %}">
                         <i class="bi bi-trash3-fill"></i>
                         </a>
                     </td>
@@ -55,7 +55,7 @@
 
         {% endif %}
 
-        <a href="{% url 'Study_app:projects'  %}" class="btn btn-danger">Project</a>
+        <a href="{% url 'study_app:projects'  %}" class="btn btn-danger">Project</a>
         <br><br>
 
 {% endblock content %}

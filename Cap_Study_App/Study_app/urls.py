@@ -1,11 +1,13 @@
-from django.urls import path
+from django.urls import  path
 from . import views
 
 
 
-app_name = 'Study_app'
+
+app_name = 'study_app'
 
 urlpatterns = [
+
     #================ Users Views ================#
 
     path('login/', views.login, name='login'),
@@ -34,5 +36,5 @@ urlpatterns = [
 
     path('flashcards/', views.flashcards, name='flashcards'),
     path('dictionary/', views.dictionary, name='dictionary')
-    
+
 ]
